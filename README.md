@@ -1,3 +1,41 @@
-Please visit [here](http://cameronMcConnell.github.io/SortingVisualizer) to view.
+# SortingVisualizer
 
-This project uses React.js for the front-end. The bars are actually just divs where their heights are randomized whenever a new array is generated. When any of the buttons are pressed, you will be locked out from performing any actions until the animation has finished playing. I would recommend that you not choose a large array size and perform and O(n^2) algorithm like bubble-sort or insertion-sort as it will take forever to finish said animations (but not as much as bogo-sort). The general process of animating the algorithms is very simple. First, the algorithm that corresponds to a said button sorts the div elements by height. While the sorting is taking place, an animations list is being built which takes lists as elements. These list elements are either comparisons or swaps. An animation function for each algorithm is called after said algorithm is completed where timeout functions space out the different animations. The function is basically iterating over the animations list and just executing said animation based on the current element. This was harder to implement for some algorithms that have recurrsion like quick-sort, merge-sort, or heap-sort but in the end it all worked out. Please enjoy.
+Simple sorting visualizer that animates bubble-sort, insertion-sort, merge-sort, quick-sort, and heap-sort.
+
+## Description
+
+SortingVisualizer is a web app developed in React to animate and visualize different sorting algorithms. The features include a way to speed up the animations, generate a new randomized set of numbers, audio cues to showcase which element is curerntly selected, and changing the size of the underlying array. Be warned that larger sizes will cause the animation to work slower with some of the algorithms that grow in polynomial time. The current app is hosted on github pages, the link can be found [here](http://cameronMcConnell.github.io/SortingVisualizer). Hope you enjoy!
+
+## Getting Started
+
+### Dependencies
+
+* ```npm```
+
+### Installing
+
+* Go to the ```/front-end``` directory and do ```npm install```.
+
+### Executing program
+
+* To start a development server, do ```npm start``` in the ```/front-end``` directory.
+* For more details, follow the README.md in the directory.
+
+## Help
+
+* Please feel free to reach out to my socials if you have questions.
+
+## Authors
+
+* Cameron McConnell
+* [LinkedIn](https://www.linkedin.com/in/cameron-mcconnell-704b17225/)
+* cameron.mcconne@gmail.com
+
+## Version History
+
+* 0.1
+    * Initial Release
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details
